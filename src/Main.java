@@ -15,7 +15,7 @@ public class Main {
 
         //Задача 3
 
-        for (int i = 2; i <= 17; i = i + 2) {
+        for (int i = 0; i <= 17; i = i + 2) {
             System.out.println(i);
         }
 
@@ -55,10 +55,10 @@ public class Main {
         //Задача 9
 
         int total1 = 29000;
-        int monthTotal1 = 0;
+        double monthTotal1 = 0;
         for (int i = 1; i <= 12; i++) {
-            monthTotal1 = monthTotal1 + total1/100;
-            System.out.println(" Месяц " + i + ", сумма накоплений равна " + monthTotal1 + " рублей");
+            monthTotal1 = total1 + monthTotal1 + total1 * 0.1;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + monthTotal1 + " рублей");
         }
 
         //Задача 10
